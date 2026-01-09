@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.topAppBar);
         setSupportActionBar(toolbar);
     }
+
     public void onClickFAB(View view) {
         Snackbar.make(view, "Se presionó el FAB", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show();

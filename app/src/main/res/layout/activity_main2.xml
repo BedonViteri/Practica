@@ -11,15 +11,18 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="16dp"
         android:orientation="vertical">
-<androidx.appcompat.widget.Toolbar
-android:id="@+id/toolbar"
-    android:layout_width="match_parent"
-    android:layout_height="?actionBarSize"
-    android:background="?attr/colorPrimary"
-    android:elevation="32dp" app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
-    <FrameLayout
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="32dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <FrameLayout
         android:id="@+id/content_frame"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
@@ -32,5 +35,6 @@ android:id="@+id/toolbar"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/cabecera"
+        app:itemIconTint="@null"
         app:menu="@menu/menu2" />
 </androidx.drawerlayout.widget.DrawerLayout>

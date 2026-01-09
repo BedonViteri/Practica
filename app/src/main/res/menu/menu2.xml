@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/menu_seccion_1"
-            android:icon="@drawable/menu"
-            android:title="Sección 1"/>
+            android:icon="@drawable/person"
+            android:title="Cliente" />
         <item
             android:id="@+id/menu_seccion_2"
-            android:icon="@drawable/menu"
-            android:title="Sección 2"/>
+            android:icon="@drawable/prod"
+            android:title="Producto" />
         <item
             android:id="@+id/menu_seccion_3"
-            android:icon="@drawable/menu"
-            android:title="Sección 3"/>
+            android:icon="@drawable/prove"
+            android:title="Proveedor" />
     </group>
     <item
         android:id="@+id/navigation_subheader"
@@ -28,4 +29,8 @@
                 android:title="Opciones 2"/>
         </menu>
     </item>
+    <item
+        android:icon="@drawable/menu"
+        android:title="menu"
+        app:showAsAction="ifRoom" />
 </menu>
